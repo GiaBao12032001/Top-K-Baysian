@@ -50,9 +50,13 @@ if __name__ == "__main__":
     sample_size = int(input("Enter sample size (0 = full data): "))
     if sample_size == 0 or sample_size > len(data):
         sample_size = None
-
+     max_items_input = input("Enter max number of items to keep (0 = no limit): ").strip()
+    if max_items_input and max_items_input.isdigit():
+        max_items = int(max_items_input)
+    else:
+        max_items = None
     print("\nRunning Top-K search...")
-    topK = top_k_bayesian_networks(data, min_support, K, weight_support, sample_size)
+    topK = top_k_bayesian_networks(data, min_support, K, weight_support, sample_size,max_items)
 
     for idx, (edges, score) in enumerate(topK, 1):
         print(f"Top-{idx}: Edges = {sorted(edges)}, Score = {score:.4f}")
