@@ -50,7 +50,7 @@ if __name__ == "__main__":
     sample_size = int(input("Enter sample size (0 = full data): "))
     if sample_size == 0 or sample_size > len(data):
         sample_size = None
-     max_items_input = input("Enter max number of items to keep (0 = no limit): ").strip()
+    max_items_input = input("Enter max number of items to keep (0 = no limit): ").strip()
     if max_items_input and max_items_input.isdigit():
         max_items = int(max_items_input)
     else:
