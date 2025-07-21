@@ -20,3 +20,26 @@ FEATURES:
   
       -Capping DAG expansions
 
+Algorithm Overview:
+How this works is:
+1.Preprocessing:
+
+      Filter top max_items by frequency (optional)
+
+      Sample up to sample_size transactions
+
+      Candidate Edge Generation:
+
+      Generate edges between items with expected support ≥ min_support
+
+2.Best-First DAG Expansion:
+
+      Start from empty DAG
+
+      Expand by adding valid edges (no cycles)
+
+3.Score using:
+
+      score = BIC + (weight_support × total expected support)
+
+      Track and return top-K DAGs with highest scores
