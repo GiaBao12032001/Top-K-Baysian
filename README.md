@@ -14,9 +14,9 @@ FEATURES:
 
 -Prunes search space by:
 
-  -Sampling transactions
+      -Sampling transactions
   
-  -Limiting top-N frequent items (max_items)
+      -Limiting top-N frequent items (max_items)
   
-  -Capping DAG expansions
+      -Capping DAG expansions
 
