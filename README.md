@@ -5,10 +5,18 @@ TOP-K FREQUENT BAYSIAN NETWORKS MINING IN UNCERTAIN DATA
 FEATURES:
 
 -Works on uncertain data
+
 -Uses expected support for itemset frequency
+
 -Scores networks using a modified BIC (Bayesian Information Criterion)
+
 -Ensures output networks are acyclic
+
 -Prunes search space by:
+
   -Sampling transactions
+  
   -Limiting top-N frequent items (max_items)
+  
   -Capping DAG expansions
+
