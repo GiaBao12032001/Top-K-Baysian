@@ -93,3 +93,35 @@ Example Output:
       Top-2: Score = -13.3962, Edges = [D->C]
       Top-3: Score = -13.1398, Edges = [C->A, D->C]
       ...
+
+EVALUATION:
+
+- This algorithmn has been tested and compared with the baselines of apiori and FP-GROWTH and it has produced similar results using the Kaggle Groceries Dataset
+- Unlike the sandard, it does show which products are bought with which:
+- This algorithmn:
+
+        Edges: [] Score: -14960.236718021642
+        Edges: [('whole milk', 'other vegetables')] Score: -14951.444591597454
+        Edges: [('rolls/buns', 'whole milk'), ('whole milk', 'other vegetables')] Score: -14943.943611318413
+        Edges: [('rolls/buns', 'whole milk'), ('whole milk', 'other vegetables'), ('whole milk', 'yogurt')] Score: -14937.600814715435
+        Edges: [('rolls/buns', 'whole milk'), ('whole milk', 'other vegetables'), ('whole milk', 'soda'), ('whole milk', 'yogurt')] Score: -14931.313400037438
+        Edges: [('other vegetables', 'frankfurter'), ('rolls/buns', 'whole milk'), ('whole milk', 'other vegetables'), ('whole milk', 'soda'), ('whole milk', 'yogurt')] Score: -14927.04919472743
+        Edges: [('other vegetables', 'frankfurter'), ('rolls/buns', 'whole milk'), ('whole milk', 'canned beer'), ('whole milk', 'other vegetables'), ('whole milk', 'soda'), ('whole milk', 'yogurt')] Score: -14923.312506237555
+        Edges: [('other vegetables', 'frankfurter'), ('rolls/buns', 'whole milk'), ('whole milk', 'canned beer'), ('whole milk', 'other vegetables'), ('whole milk', 'root vegetables'), ('whole milk', 'soda'), ('whole milk', 'yogurt')] Score: -14919.773674190916
+        Edges: [('other vegetables', 'frankfurter'), ('rolls/buns', 'whole milk'), ('whole milk', 'canned beer'), ('whole milk', 'other vegetables'), ('whole milk', 'root vegetables'), ('whole milk', 'sausage'), ('whole milk', 'soda'), ('whole milk', 'yogurt')] Score: -14916.728670319533
+        Edges: [('other vegetables', 'frankfurter'), ('rolls/buns', 'whole milk'), ('whole milk', 'canned beer'), ('whole milk', 'other vegetables'), ('whole milk', 'root vegetables'), ('whole milk', 'sausage'), ('whole milk', 'soda'), ('whole milk', 'tropical fruit'), ('whole milk', 'yogurt')] Score: -14913.814612864788
+
+  - Apiori:
+
+                support            itemsets
+    
+            2  0.157923        (whole milk)
+            0  0.122101  (other vegetables)
+            1  0.110005        (rolls/buns)
+  - FP-GROWTH:
+    
+          support            itemsets
+    
+            1  0.156519        (whole milk)
+            2  0.121299  (other vegetables)
+            0  0.108802        (rolls/buns)
