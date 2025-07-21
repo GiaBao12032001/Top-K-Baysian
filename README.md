@@ -1,6 +1,6 @@
-TOP-K FREQUENT BAYSIAN NETWORKS MINING IN UNCERTAIN DATA
+TOP-K FREQUENT BAYESIAN NETWORKS MINING IN UNCERTAIN DATA
 
-- This repository contains an algorithm to find and extract the TOP-K Beysian networks from uncertain transactional data sets. This method uses a expected support with a BIC-based scoring function, with a best first search algorithmn over valid Direct Acylic Graphs (DAGs)
+- This repository contains an algorithm to find and extract the TOP-K Beyesian networks from uncertain transactional data sets. This method uses a expected support with a BIC-based scoring function, with a best first search algorithmn over valid Direct Acylic Graphs (DAGs)
 
 FEATURES:
 
@@ -49,6 +49,7 @@ How this works is:
 HOW TO USE
 
 First you run the alogrithm then the main to make sure main can import from the aglorithm
+
       python algorithmn.py
       python main.py
       
@@ -70,7 +71,7 @@ You will be prompted for:
 
 - Max number of items (0 = no limit)
 
-IF YOU WANT TO USE A CSV
+HOW TO USE A CUSTOM CSV
 
 Input CSV must have:
 
@@ -95,7 +96,7 @@ Example Output:
 
 EVALUATION:
 
-- This algorithmn has been tested and compared with the baselines of apiori and FP-GROWTH and it has produced similar results using the Kaggle Groceries Dataset
+- This algorithm has been tested and compared with the baselines of apiori and FP-GROWTH and it has produced similar results using the Kaggle Groceries Dataset
 - Unlike the sandard, it does show which products are bought with which, such as which product tends to be bought alongside another one:
   
   Example being Edges: [('whole milk', 'other vegetables')] Score: -14951.444591597454: shows that whole milk is likely to be boughyt with other vegetables.
