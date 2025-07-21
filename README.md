@@ -30,17 +30,17 @@ How this works is:
 
       Sample up to sample_size transactions
 
-      Candidate Edge Generation:
+2.Candidate Edge Generation:
 
       Generate edges between items with expected support ≥ min_support
 
-2.Best-First DAG Expansion:
+3.Best-First DAG Expansion:
 
       Start from empty DAG
 
       Expand by adding valid edges (no cycles)
 
-3.Score using:
+      Score using:
 
       score = BIC + (weight_support × total expected support)
 
