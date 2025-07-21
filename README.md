@@ -55,11 +55,12 @@ First you run the alogrithm then the main to make sure main can import from the 
       
 You will be prompted for:
 
-- Dataset type (static / csv / random):
+- Dataset type (static / csv / random / groceries):
 
-      - static made built into the code
-      - a random data set with a fixed size
-      - a csv data set to import
+        - static made built into the code
+        - a random data set with a fixed size
+        - a csv data set to import
+        - an edge case, used for Groceries_Dataset.csv testing, and any other dataset like it.
 
 - Minimum support threshold
 
@@ -128,3 +129,5 @@ EVALUATION:
             1  0.156519        (whole milk)
             2  0.121299  (other vegetables)
             0  0.108802        (rolls/buns)
+
+- However, there is one caveat. The algorithm is significantly slower than that of the baselines. Mostly due to BIC scoring and scanning for edge cases, expanding DAGs. It's why we had to set limitations, on samplesizes, item sizes, and such to have it run at an acceptable runtime.
