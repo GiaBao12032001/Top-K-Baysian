@@ -56,9 +56,10 @@ Run the Script:
 You will be prompted for:
 
 - Dataset type (static / csv / random):
-- static made built into the code
-- a random data set with a fixed size
-- a csv data set to import
+
+      - static made built into the code
+      - a random data set with a fixed size
+      - a csv data set to import
 
 - Minimum support threshold
 
