@@ -20,8 +20,10 @@ FEATURES:
   
       -Capping DAG expansions
 
-Algorithm Overview:
+ALGORITHMN OVERVIEW
+
 How this works is:
+
 1.Preprocessing:
 
       Filter top max_items by frequency (optional)
