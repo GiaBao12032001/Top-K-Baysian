@@ -60,7 +60,7 @@ You will be prompted for:
         - static made built into the code
         - a random data set with a fixed size
         - a csv data set to import
-        - a specific function for Groceries_Dataset.csv testing, and any other dataset like it.
+        - a specific function for Groceries_Dataset.csv testing, turning certain datasets into uncertain datasets
 
 - Minimum support threshold
 
